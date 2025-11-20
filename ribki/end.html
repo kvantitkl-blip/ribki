@@ -1,0 +1,148 @@
+<html>
+
+<head>
+<title>Факты</title>
+</head>
+
+<style>
+body {background-color: #0c1727;}
+
+h1   {color: MidnightBlue;
+      font-family: verdana;}
+h2   {color: MidnightBlue;
+      font-family: verdana;}
+h3   {color: RoyalBlue;
+      font-family: verdana;}
+
+
+
+p    {color: RoyalBlue;
+      font-family: verdana;}
+
+a    {color: RoyalBlue;
+      font-family: verdana;}
+
+table { border-top-left-radius:10px;
+        border-top-right-radius:10px;
+        border-spacing:10px;}
+
+td {border-radius:15px;
+    padding:10px;
+}
+img {border-radius:15px;
+}
+</style>
+
+<center>
+
+<body>
+
+<table>
+<tr>
+
+<td 
+ bgcolor="d8def3" 
+ width="60" height="60">
+<a href="https://kvantitkl-blip.github.io/ribki/"><img src="ribki/1.png" 
+  width="60" 
+  height="60"></a>
+</td>
+<td 
+ bgcolor="d8def3" 
+ width="750" height="60"> <h1>Как ухаживать за рыбкой-петушком.</h1>
+</td>
+<td 
+ bgcolor="d8def3" 
+ width="750" height="60"> <h1>Как ухаживать за рыбкой-петушком.</h1>
+</td>
+<td bgcolor="d8def3" 
+ width="60" height="60">
+<p align="middle">Текущее время: <time id="currentTime"></time></p>
+<script>
+  var timeElement = document.getElementById('currentTime');
+  setInterval(function () {
+    var currentTime = new Date();
+    timeElement.textContent = currentTime.toLocaleTimeString();
+  }, 1000);
+</script>
+</td>
+</tr>
+</table>
+
+<table>
+<img src="ribki/i.png"   width="800" 
+  height="250">
+</table>
+
+<table>
+<tr>
+
+<td 
+ bgcolor="263878" width="250" height="60" align="middle"> 
+<a href="ribki/info.html"><h3 style="color: #d8def3;">Аквариум</h3></a>
+</td>
+
+<td 
+ bgcolor="566ec2" width="250" height="60" align="middle">
+<a href="ribki/middle.html"><h3 style="color: MidnightBlue;">Уход</h3></a>
+</td>
+
+<td bgcolor="8e9fdc" width="250" height="60" align="middle">
+ <a href="ribki/end.html"><h3 style="color: MidnightBlue;">Факты</h3></a>
+</td>
+
+</tr>
+</table>
+
+<table>
+<tr>
+<td bgcolor="2648c0" width="60"> </td>
+<td bgcolor="d8def3" width="750" height="300"><h2>Факты</h2><p>Петушки относятся к семье лабиринтовых рыб (как и гурами). Их дыхательная система позволяет им дышать обычным воздухом с поверхности воды, однако, им все же требуется фильтрационная система в аквариумах.<br>
+Самки рыбок петушков обычно мельче самцов. У них нет таких красивых плавников как у самцов, тем не менее они по-своему столь же прекрасны и игривы. Не следует содержать их вместе, так как самка может ощипать плавники самца и они порвутся.<br>
+Небольшие резервуары или аквариумы не подходят для содержания петушков. Они требуют частой 100 % замены воды, чтобы та не загрязнялась аммиаком до смертельно опасного уровня. Поэтому рекомендуем использовать аквариум большего размера с установившимся биологическим циклом.</p> </td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td bgcolor="d8def3"><p>Автор: Якуцевич М</p></td>
+<td bgcolor="d8def3"><p> Мой другой сайт -›</p></td>
+<td bgcolor="d8def3"><a href="https://kvantitkl-blip.github.io/shahmati/"><p> Тут</p></a></td>
+</tr>
+</table>
+
+<p>До нового года осталось:</p>
+<p id="demo"></p>
+
+<script>
+
+var countDownDate = new Date("Jan 1, 2026 00:00:01").getTime();
+
+
+var x = setInterval(function() {
+
+ 
+  var now = new Date().getTime();
+
+ 
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  
+  document.getElementById("demo").innerHTML = days + "д " + hours + "ч "
+  + minutes + "мин " + seconds + "сек ";
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+
+</body>
+
+</html>
