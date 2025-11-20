@@ -51,7 +51,14 @@ img {border-radius:15px;
  bgcolor="d8def3" 
  width="750" height="60"> <h1>Как ухаживать за рыбкой-петушком.</h1>
 </td>
-
+<td><p align="middle">Текущее время: <time id="currentTime"></time></p>
+<script>
+  var timeElement = document.getElementById('currentTime');
+  setInterval(function () {
+    var currentTime = new Date();
+    timeElement.textContent = currentTime.toLocaleTimeString();
+  }, 1000);
+</script></td>
 </tr>
 </table>
 
@@ -133,4 +140,5 @@ var x = setInterval(function() {
 </body>
 
 </html>
+
 
